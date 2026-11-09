@@ -1,218 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About | ARYAN</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <meta name="description" content="Discover the Malik G story: thoughtful Pakistani clothing made for real life.">
+  <title>Our story — Malik G</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="site.css" rel="stylesheet">
 </head>
-
 <body>
-
-  <!-- Navbar (same on every page) -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">ARYAN</a>
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><span
-          class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="calculator.html">Calculator</a></li>
-          <li class="nav-item"><a class="nav-link" href="todo.html">To-Do</a></li>
-          <li class="nav-item"><a class="nav-link" href="age.html">Age Tool</a></li>
-          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-          <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-        <button id="themeBtn" class="btn btn-sm btn-outline-secondary ms-lg-3">Dark / Light</button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Page content -->
-  <main class="container">
-    <h1 class="page-title">About me</h1>
-    <p class="muted">Who I am and where I am going.</p>
-    <section>
-      <h3 class="mb-3">My story</h3>
-      <p>My name is ARYAN. I am studying Software Engineering and I enjoy turning ideas into working websites. I started
-        with HTML and CSS, then added Bootstrap and JavaScript. My plan is to become a Full Stack Developer in 3 years
-        and then learn Python and AI/ML.</p>
-    </section>
-    <section>
-      <h3 class="mb-3">My goals</h3>
-      <div class="row g-3">
-        <div class="col-md-4">
-          <div class="card-box">
-            <h5>Near future</h5>
-            <p>Get a job or internship as a junior web developer.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-box">
-            <h5>In 3 years</h5>
-            <p>Apply for a scholarship abroad in Computer Science / Software Engineering.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-box">
-            <h5>Long term</h5>
-            <p>Become a Full Stack Developer, then grow into AI/ML with Python.</p>
-          </div>
+  <div class="announcement-bar">Complimentary delivery on orders over PKR 8,000</div>
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg container py-3" aria-label="Main navigation">
+      <a class="navbar-brand brand" href="index.HTML"><span class="brand-mark">M</span> Malik G</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav"><ul class="navbar-nav mx-auto gap-lg-3"><li class="nav-item"><a class="nav-link" href="index.HTML">Home</a></li><li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li><li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">Our story</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li></ul><div class="nav-tools d-flex align-items-center gap-3"><button class="text-link" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</button><a class="bag-link" href="shop.html" aria-label="Shopping bag"><span aria-hidden="true">Bag</span><span class="bag-count" data-cart-count>0</span></a></div></div>
+    </nav>
+  </header>
+  <main>
+    <section class="page-intro container"><span class="eyebrow">A little about us</span><h1 class="display-heading">Cloth for a life well lived.</h1><p class="section-note">We believe getting dressed should feel less like a decision and more like coming home to yourself.</p></section>
+    <section class="container pb-5">
+      <div class="about-feature row g-0 overflow-hidden">
+        <div class="about-photo col-lg-6" role="img" aria-label="Timeless contemporary clothing in natural tones"></div>
+        <div class="about-copy col-lg-6 d-flex flex-column justify-content-center">
+          <span class="eyebrow">Our point of view</span>
+          <h2 class="display-heading mt-2">Less, but with feeling.</h2>
+          <p>Malik G began with a simple thought: the clothes we reach for most should feel good, fit into real life and last beyond one season. That idea guides every piece we choose.</p>
+          <p>We look for breathable fabrics, considered proportions and small details that make the everyday feel special. The result is a wardrobe that is easy to wear and distinctly your own.</p>
+          <a href="shop.html" class="btn btn-forest align-self-start mt-2">Explore the collection <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
-    <section>
-      <h3 class="mb-3">Education</h3>
-      <div class="card-box">
-        <h5>BS Software Engineering</h5>
-        <p>Currently studying. (Aptech, 2026 - present . )</p>
-      </div>
-    </section>
-    <section>
-      <h3 class="mb-3">What I enjoy</h3>
-      <div class="row g-3">
-        <div class="col-md-4">
-          <div class="card-box">
-            <h5>Building things</h5>
-            <p>I like seeing an idea become a working page.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-box">
-            <h5>Problem solving</h5>
-            <p>I enjoy fixing bugs, even when it takes a long time.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-box">
-            <h5>Learning online</h5>
-            <p>
-I learn at Aptech and also online. I study there, and then I practice by myself with free courses and documentation.</p>
-          </div>
+    <section class="values-section py-5">
+      <div class="container py-lg-4">
+        <div class="text-center mb-5"><span class="eyebrow">The Malik G way</span><h2 class="display-heading mt-2">Good things, thoughtfully made.</h2></div>
+        <div class="row g-4">
+          <div class="col-md-4"><article class="value-card"><span class="value-number">01</span><h3>Made for real days</h3><p>Comfortable shapes and breathable fabric you will want to wear on repeat.</p></article></div>
+          <div class="col-md-4"><article class="value-card"><span class="value-number">02</span><h3>Considered by design</h3><p>We focus on the details that matter: how it feels, how it fits and how it lasts.</p></article></div>
+          <div class="col-md-4"><article class="value-card"><span class="value-number">03</span><h3>Proudly from Pakistan</h3><p>Our point of view is rooted in local craft, culture and contemporary life.</p></article></div>
         </div>
       </div>
     </section>
-    <section>
-      <h3 class="mb-3">How I learn</h3>
-      <ol class="muted">
-        <li class='mb-2'>I read the idea first (for example, what is the DOM).</li>
-        <li class='mb-2'>I write a tiny example myself.</li>
-        <li class='mb-2'>I use it inside a real project.</li>
-        <li class='mb-2'>I put the project on GitHub and improve it later.</li>
-      </ol>
-    </section>
-    <section>
-      <h3 class="mb-3">Quick facts</h3>
-      <div class="card-box">
-        <p>Full Name: ARYAN<br>Field: Software Engineering<br>Languages: Urdu,English<br>Looking for: Job / internship now,
-          scholarship abroad in the future</p>
-      </div>
-    </section>
-    <section>
-      <h3 class="mb-3">My 3-year roadmap</h3>
-      <div class="row g-3">
-        <div class="col-md-4">
-          <div class="card-box">
-            <h5>Now to 6 months</h5>
-            <p>Make JavaScript strong (functions, arrays, objects, DOM, fetch API). Use Git and GitHub every day. Learn
-              Python basics.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-box">
-            <h5>6 to 12 months</h5>
-            <p>Learn React. Build 2 frontend projects (weather app, quiz app). Keep practicing Python.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-box">
-            <h5>Year 2</h5>
-            <p>Backend: Node.js and Express, a database (MongoDB or SQL), login system and REST APIs.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-box">
-            <h5>Year 3</h5>
-            <p>Build 2-3 full stack projects and deploy them. Study Data Structures. Start AI/ML (NumPy, pandas,
-              scikit-learn).</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <h3 class="mb-3">Job plan (next few months)</h3>
-      <ol class="muted">
-        <li class='mb-2'>Finish my portfolio and put it on GitHub Pages.</li>
-        <li class='mb-2'>Update LinkedIn and add the website link.</li>
-        <li class='mb-2'>Apply for internships and junior web developer roles.</li>
-        <li class='mb-2'>Add every new project to this site.</li>
-      </ol>
-    </section>
-    <section>
-      <h3 class="mb-3">Scholarship plan (in 3 years)</h3>
-      <ol class="muted">
-        <li class='mb-2'>Keep a strong CGPA in Software Engineering.</li>
-        <li class='mb-2'>Prepare for an English test (for example IELTS) and know the requirements of each scholarship.
-        </li>
-        <li class='mb-2'>Have a portfolio with real, deployed projects (this website).</li>
-        <li class='mb-2'>Find teachers who can write recommendation letters.</li>
-        <li class='mb-2'>Write a clear statement of purpose about my goals in Full Stack and AI.</li>
-      </ol>
-    </section>
-    <section>
-      <h3 class="mb-3">Features I will add to this website</h3>
-      <div class="row g-3">
-        <div class="col-md-4">
-          <div class="card-box">
-            <h5>Project screenshots</h5>
-            <p>Real images for each project.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-box">
-            <h5>Blog</h5>
-            <p>Short notes about what I learn.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-box">
-            <h5>Live projects</h5>
-            <p>Working demos of my React and full stack apps.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-box">
-            <h5>Progress tracker</h5>
-            <p>A timeline that shows what I completed.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <h3 class="mb-3">Let's work together</h3>
-      <div class="card-box text-center">
-        <h4>Looking for a junior web developer?</h4>
-        <p>I am open to jobs, internships and freelance work.</p><a href="contact.html" class="btn btn-main">Contact
-          me</a>
-      </div>
-    </section>
+    <section class="container py-5"><div class="quote-panel text-center"><span class="eyebrow">A note from Malik G</span><blockquote>“The best pieces are the ones that become part of your story.”</blockquote><a class="underlined-link" href="contact.html">Say hello <span aria-hidden="true">→</span></a></div></section>
   </main>
-
-  <!-- Footer (same on every page) -->
-  <footer>
-    <div class="container">© 2026 ARYAN. Built with HTML, CSS, Bootstrap and JavaScript.</div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
+  <footer class="site-footer mt-4"><div class="container py-5"><div class="row gy-4"><div class="col-md-5"><a class="brand footer-brand" href="index.HTML"><span class="brand-mark">M</span> Malik G</a><p class="footer-copy mt-3">Considered clothing for everyday living. Designed in Pakistan, made to be lived in.</p></div><div class="col-6 col-md-3"><h2 class="footer-title">Explore</h2><a href="shop.html">Shop all</a><a href="about.html">Our story</a><a href="contact.html">Contact</a></div><div class="col-6 col-md-4"><h2 class="footer-title">Need a hand?</h2><p class="footer-copy">Questions about an order or a piece? We are here to help.</p><a href="contact.html" class="footer-cta">Talk to our team →</a></div></div><div class="footer-bottom mt-4 pt-3 d-flex flex-column flex-md-row justify-content-between gap-2"><span>© <span data-year></span> Malik G. All rights reserved.</span><span>Made with care in Pakistan</span></div></div></footer>
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content login-modal"><div class="modal-header border-0 pb-0"><button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body px-4 px-md-5 pb-5 pt-1"><span class="eyebrow">Welcome back</span><h2 class="display-heading mt-2" id="loginModalLabel">Log in to Malik G</h2><p class="section-note mb-4">Sign in to keep your favourites and orders close.</p><form data-demo-form><div class="mb-3"><label class="form-label" for="login-email">Email address</label><input class="form-control" id="login-email" type="email" autocomplete="email" required placeholder="you@example.com"></div><div class="mb-3"><label class="form-label" for="login-password">Password</label><input class="form-control" id="login-password" type="password" autocomplete="current-password" required placeholder="Your password"></div><button class="btn btn-forest w-100" type="submit">Log in <span aria-hidden="true">→</span></button><p class="form-feedback mb-0" data-form-feedback aria-live="polite"></p></form></div></div></div></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script><script src="site.js"></script>
 </body>
-
 </html>

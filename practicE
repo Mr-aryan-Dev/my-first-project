@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secure Access</title>
+  <style>
+    :root {
+      --green: #00ff88;
+      --dark: #050807;
+      --panel: rgba(5, 20, 14, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      color: var(--green);
+      font-family: "Courier New", monospace;
+      background:
+        linear-gradient(rgba(0, 255, 136, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 136, 0.04) 1px, transparent 1px),
+        var(--dark);
+      background-size: 32px 32px;
+    }
+
+    body::before {
+      content: "01001000 01000001 01000011 01001011 01000101 01010010";
+      position: fixed;
+      inset: 0;
+      padding: 24px;
+      opacity: 0.08;
+      line-height: 2;
+      word-spacing: 20px;
+      pointer-events: none;
+    }
+
+    .login-box {
+      width: min(420px, 90%);
+      padding: 32px;
+      border: 1px solid var(--green);
+      background: var(--panel);
+      box-shadow: 0 0 35px rgba(0, 255, 136, 0.25);
+    }
+
+    .topline {
+      margin-bottom: 28px;
+      color: #8affbd;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      text-shadow: 0 0 12px var(--green);
+    }
+
+    .subtitle {
+      color: #63a982;
+      font-size: 13px;
+    }
+
+    label {
+      display: block;
+      margin: 18px 0 7px;
+      font-size: 13px;
+    }
+
+    input {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #167346;
+      outline: none;
+      color: var(--green);
+      background: #020604;
+      font: inherit;
+    }
+
+    input:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+    }
+
+    button {
+      width: 100%;
+      margin-top: 24px;
+      padding: 13px;
+      border: 1px solid var(--green);
+      color: #001b0c;
+      background: var(--green);
+      cursor: pointer;
+      font: bold 14px "Courier New", monospace;
+    }
+
+    button:hover {
+      box-shadow: 0 0 18px var(--green);
+    }
+
+    #status {
+      min-height: 20px;
+      margin-top: 18px;
+      color: #8affbd;
+      font-size: 12px;
+    }
+
+    .footer {
+      margin-top: 24px;
+      color: #397453;
+      font-size: 11px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main class="login-box">
+    <div class="topline">[ SYSTEM ONLINE ]</div>
+    <h1>ACCESS TERMINAL</h1>
+    <div class="subtitle">Authorized personnel only // encrypted session</div>
+
+    <form id="loginForm">
+      <label for="username">USER_ID</label>
+      <input id="username" type="text" placeholder="enter username" required />
+
+      <label for="password">PASSCODE</label>
+      <input id="password" type="password" placeholder="enter passcode" required />
+
+      <button type="submit">INITIALIZE LOGIN</button>
+      <div id="status"></div>
+    </form>
+
+    <div class="footer">This is a demo interface. No credentials are transmitted.</div>
+  </main>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const status = document.getElementById("status");
+      status.textContent = "› Verifying identity...";
+
+      setTimeout(() => {
+        status.textContent = "› Demo login successful. Welcome, operator.";
+      }, 900);
+    });
+  </script>
+</body>
+</html>
